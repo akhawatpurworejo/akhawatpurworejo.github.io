@@ -235,3 +235,10 @@ body.vm{--wh:60px}
 /* v14 Kontak: ilustrasi menyatu dengan formulir (satu latar) */
 @media(min-width:860px){.kside{background:none!important;padding:30px 30px 30px 0}.kside::before{display:none!important}.kbox{grid-template-columns:1.1fr .9fr}}
 .kside svg{filter:drop-shadow(0 6px 10px rgba(79,50,38,.12))}
+
+/* v15 Kontak: latar formulir girly (krem hangat + pola hati/kilau + ranting daun) */
+.kbox{position:relative;background:linear-gradient(135deg,#f4e0ca,#f9eee2 55%,#efd5bb);border:1px solid #e7cfb6}
+.kbox::before{content:"";position:absolute;inset:0;background:var(--pd);background-size:120px;opacity:.2;pointer-events:none}
+.kbox::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.4;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none' stroke='%238D6350' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 95C30 70 50 45 85 12'/%3E%3Cpath d='M28 74c-10-2-14-10-12-18 9 1 14 8 12 18zM44 56c-9-4-11-13-7-20 9 3 11 11 7 20zM62 38c-8-5-8-14-2-20 8 4 9 12 2 20zM36 66c8-1 15 3 18 10-9 3-16-1-18-10zM54 48c8-1 14 3 17 9-9 3-15 0-17-9z'/%3E%3C/svg%3E") right -10px top -8px/110px no-repeat,url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none' stroke='%238D6350' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 95C30 70 50 45 85 12'/%3E%3Cpath d='M28 74c-10-2-14-10-12-18 9 1 14 8 12 18zM44 56c-9-4-11-13-7-20 9 3 11 11 7 20zM62 38c-8-5-8-14-2-20 8 4 9 12 2 20zM36 66c8-1 15 3 18 10-9 3-16-1-18-10zM54 48c8-1 14 3 17 9-9 3-15 0-17-9z'/%3E%3C/svg%3E") left -10px bottom -8px/110px no-repeat}
+.kbox .kfm,.kbox .kside{position:relative;z-index:1}
+.kfm input,.kfm select,.kfm textarea{background:#fffaf2;border:1px solid #e3cbb2}
