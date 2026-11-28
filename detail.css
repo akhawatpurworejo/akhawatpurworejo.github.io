@@ -231,3 +231,7 @@ body.vm{--wh:60px}
 .vm .sp-hero{--wh:60px;padding-top:22px}
 @media(min-width:860px){.vm .sp-hero{padding-top:26px}}
 .vm .vrow .sp-head{width:100%}
+
+/* v14 Kontak: ilustrasi menyatu dengan formulir (satu latar) */
+@media(min-width:860px){.kside{background:none!important;padding:30px 30px 30px 0}.kside::before{display:none!important}.kbox{grid-template-columns:1.1fr .9fr}}
+.kside svg{filter:drop-shadow(0 6px 10px rgba(79,50,38,.12))}
