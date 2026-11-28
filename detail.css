@@ -220,3 +220,14 @@ body.vm{--sp-gap:clamp(16px,3vw,24px);--sec:clamp(16px,3vw,24px)}
 .vtext{max-width:64ch!important;font-size:clamp(1.1rem,3.6vw,1.5rem)!important}
 .vm .alt{padding-bottom:var(--sp-gap)}
 .vm .sp-cta{margin-top:0}
+
+/* v12 Visi & Misi: hero lebih ringkas, gelombang lebih naik, tanpa hiasan di atas judul */
+.vm .hd::before{content:none}
+.vm .sp-hero{padding:14px 0 calc(var(--wh) + 2px)}
+.vm .sp-hero .sp-art{width:min(58vw,210px);margin-top:10px}
+.vm .sp-hero-in{gap:6px}
+@media(min-width:860px){.vm .sp-hero{padding-top:30px}.vm .sp-hero .sp-art{width:min(100%,260px);margin:0}.vm .sp-hero-in{gap:36px}}
+body.vm{--wh:60px}
+.vm .sp-hero{--wh:60px;padding-top:22px}
+@media(min-width:860px){.vm .sp-hero{padding-top:26px}}
+.vm .vrow .sp-head{width:100%}
